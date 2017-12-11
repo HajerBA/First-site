@@ -1,3 +1,88 @@
 h1 {
-  color: rgba(238, 255, 0, 0.397);
+  color: rgba(238, 44, 180, 0.801);
+}
+header{
+  float: left;
+}
+.page {
+  float: right;
+}
+footer {
+  clear: both;
+}
+
+#monmenu {font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;font-size: 90%;font-weight:bold;}
+#monmenu ul ul {display: none; position: absolute; left: 164px; top: -1px; margin:0px; padding: 0px; border: 1px solid #B0B0B0;}
+#monmenu li {list-style-type: none; position: relative; width: 160px; background-color: #E0E0E0; padding: 2px; margin: 0px}
+#monmenu li:hover, #monmenu li.sfhover {background-color: #FFFF70;}
+#monmenu li a {text-decoration:none;}
+#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3, #monmenu li.sfhover ul.niveau2, #monmenu li li.sfhover ul.niveau3 {display: block}
+#monmenu li.plus {background-position:right; background-image: url(illustrations/fdroite.gif); background-repeat: no-repeat; border-bottom: 1px solid #B0B0B0;}
+li.plus {
+  background-position: right;
+  background-image: url(illustrations/fdroite.gif);
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #B0B0B0;
+}
+exemple-menu-deroulant2.htm:8
+#monmenu li {
+  list-style-type: none;
+  position: relative;
+  width: 160px;
+  background-color: #E0E0E0;
+  padding: 2px;
+  margin: 0px;
+}
+user agent stylesheet
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+Inherited from ul.niveau2
+user agent stylesheet
+ul ul, ol ul {
+  list-style-type: circle;
+}
+user agent stylesheet
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+Inherited from li
+exemple-menu-deroulant2.htm:8
+#monmenu li {
+  list-style-type: none;
+  position: relative;
+  width: 160px;
+  background-color: #E0E0E0;
+  padding: 2px;
+  margin: 0px;
+}
+user agent stylesheet
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+Inherited from ul.niveau1
+user agent stylesheet
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+Inherited from div#monmenu
+exemple-menu-deroulant2.htm:6
+#monmenu {
+  font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+  font-size: 90%;
+  font-weight: bold;
 }
