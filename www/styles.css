@@ -9,11 +9,114 @@ html {
 body {
 font-family: Helvetica, Arial, sans-serif;
 font-size:12px;
-color:#333333;
+color:#201f1f;
 position:relative;
-background: #202020;
+background: #abeef7;
 }
-
+#menu-demo2, #menu-demo2 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+	/*float: right;*/
+	}
+	#menu-demo2 li{
+	display:inline-block;
+	position:relative;
+	border-radius:8px 8px 0 0;
+	}
+	#menu-demo2 ul li{
+	display:inherit;
+	border-radius:0;
+	}
+	#menu-demo2 ul li:hover{
+	border-radius:0;
+	}
+	#menu-demo2 ul li:last-child{
+	border-radius:0 0 8px 8px;
+	}
+	#menu-demo2 ul{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .8s all .3s;
+	-webkit-transition: .8s all .3s;
+	transition: .8s all .3s;
+	}
+	#menu-demo2 li:hover ul{
+	max-height:15em;
+	}
+	/* background des liens menus */
+	#menu-demo2 li:first-child{
+	background-color: #65537A;
+	background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+	background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+	}
+	#menu-demo2 li:nth-child(2){
+	background-color: #729EBF;
+	background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+	background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+	}
+	#menu-demo2 li:nth-child(3){
+	background-color: #F6AD1A;
+	background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
+	background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+	}
+	#menu-demo2 li:last-child{
+	background-color: #CFFF6A;
+	background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+	background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+	}
+	/* background des liens sous menus */
+	#menu-demo2 li:first-child li{
+	background:#2A2333;
+	}
+	#menu-demo2 li:nth-child(2) li{
+	background:#333A40;
+	}
+	#menu-demo2 li:nth-child(3) li{
+	background:#9F391A;
+	}
+	#menu-demo2 li:last-child li{
+	background:#677F35;
+	}
+	/* background des liens menus et sous menus au survol */
+	#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+	background:#65537A;
+	}
+	#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+	background:#729EBF;
+	}
+	#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+	background:#F6AD1A;
+	}
+	#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+	background:#CFFF6A;
+	}
+	/* les a href */
+	#menu-demo2 a{
+	text-decoration:none;
+	display:block;
+	padding:8px 32px;
+	color:#fff;
+	font-family:arial;
+	}
+	#menu-demo2 ul a{
+	padding:8px 0;
+	}
+	#menu-demo2 li:hover li a{
+	color:#fff;
+	text-transform:inherit;
+	}
+	#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+	color:#000;
+	}
+	#menu-demo2 li > ul > li {
+		width: 100%;
+	}
 
 #page{
 width:972px;
@@ -31,9 +134,10 @@ position:relative;
 ul {
 padding:0;
 margin:0;
-position:absolute;
+/*position:absolute;*/
 right:10px;
 top:55px;
+float: right;
 }
 
 ul li{
@@ -147,4 +251,96 @@ color:#8d8d8d;
 }
 ul li .login_form a:hover {
 border-bottom:1px dotted #8d8d8d;
+}
+.menugauch {
+	float: left;
+	width: 20%;
+}
+.menugauch dt {
+	border-bottom: 1px solid;
+	border-color: gray;
+}
+.menugauch a {
+	color: #a89a9a;
+	text-decoration: none;
+	font-size: 15px;
+}
+.conten {
+float: right;
+width: 70%;
+}
+footer {
+	clear: both;
+}
+.conteneur-galerie-images
+{
+	margin:0 auto;
+	border:5px solid #EEE;
+	/*width:500px;
+	height:800px;*/
+	overflow:auto; 
+	padding:5px;
+}
+.gauche-galerie-images
+{
+	width:200px;
+	height:auto;
+	float:left;
+}
+.droite-galerie-images
+{
+	width:600px;
+	height:auto;
+	float:right;
+	text-align:center;
+}
+
+.droite-galerie-images img
+{
+	/*width:290px;*/
+	height:300px;
+	background:#D5F4FF;
+	padding:5px;
+}
+.miniature-galerie-images
+{
+	list-style-type:none;
+	padding:0;
+}
+.miniature-galerie-images li
+{
+	display:block;
+}
+.miniature-galerie-images li img
+{
+	width:80px;
+	height:80px;
+	background:#EEE;
+	padding:5px;
+	margin:2px;
+}
+.miniature-galerie-images li img:hover
+{
+	
+	background:#D5F4FF;
+	
+}
+#titre_bas
+{
+	font:Georgia, "Times New Roman", Times, serif;
+	color:#639;
+	font-size:20px;
+	font-style:italic;
+}
+.miniature-galerie-images {
+	display: block;
+}
+.menugauch >nav {
+ float: left;
+ width: 50%;
+ 
+}
+.menugauch >aside >nav >dl >dt {
+	font-size: 20px;
+	
 }
