@@ -11,15 +11,14 @@ font-family: Helvetica, Arial, sans-serif;
 font-size:12px;
 color:#201f1f;
 position:relative;
-background: #abeef7;
+background: #c9f0f5;
 }
 #menu-demo2, #menu-demo2 ul{
 	padding:0;
-	margin:0;
+	margin: 15px;
 	list-style:none;
 	text-align:center;
-	/*float: right;*/
-	}
+		}
 	#menu-demo2 li{
 	display:inline-block;
 	position:relative;
@@ -129,8 +128,18 @@ width:972px;
 height:131px;
 background: url("images/logo.png") 0 0 no-repeat;
 position:relative;
+padding-left: 157px;
 }
-
+.myhome {
+	display: block;
+	width: 380px;
+	height: 105px;
+	float: left;
+}
+header >ul {
+	float: right;
+	margin: 0 auto 0 auto;
+}
 ul {
 padding:0;
 margin:0;
@@ -213,7 +222,7 @@ font-weight:bold;
 }
 ul li .login_form input::-webkit-input-placeholder  {
 color: #cdc8c4;
-text-shadowtext-shadow: 0px -1px 0px #38506b;
+text-shadow: 0px -1px 0px #38506b;
 }
 ul li .login_form input:-moz-placeholder {
 color: #cdc8c4; 
@@ -266,20 +275,42 @@ border-bottom:1px dotted #8d8d8d;
 	font-size: 15px;
 }
 .conten {
-float: right;
+/*float: right;*/
 width: 70%;
+/*display: flex;
+flex-direction: row;*/
+padding: 40px;
+margin: 35px 4px;
+display: flex;
+flex-direction: column;
+
 }
+.suggestion {
+	flex-basis: 33%;
+	align-items: flex-end;
+   /* align-self: flex-start; /* ou .main-content  et align self si j'ai plusieur items et je veux 3 en haut par exemple et un seul en bas*/  
+  }
+  .container-column {
+	display: flex;
+	flex-direction: column;
+  }
 footer {
 	clear: both;
+	width: 100%;
+	background: rgb(208, 217, 224);
+	display: flex;
+    justify-content: space-between;
 }
+
 .conteneur-galerie-images
 {
 	margin:0 auto;
-	border:5px solid #EEE;
+	/*border:5px solid #EEE;*/
 	/*width:500px;
 	height:800px;*/
 	overflow:auto; 
 	padding:5px;
+	/*justify-content: flex-start;*/
 }
 .gauche-galerie-images
 {
@@ -328,10 +359,26 @@ footer {
 #titre_bas
 {
 	font:Georgia, "Times New Roman", Times, serif;
-	color:#639;
+	color:rgb(188, 137, 238);
 	font-size:20px;
 	font-style:italic;
+	text-justify: auto;
 }
+.stylp {
+	width: 40px;
+	height: 10px;
+	background-color: aliceblue;
+}
+.remise {
+	border-bottom: 1px solid;
+	border-color: gray;
+	color: rgb(218, 35, 157);
+	font-weight: bold;
+}
+.remise1 {
+	border-top: 1px solid;
+	border-color: gray;
+	}
 .miniature-galerie-images {
 	display: block;
 }
@@ -344,3 +391,222 @@ footer {
 	font-size: 20px;
 	
 }
+/* css pour form */
+#formc {
+	
+	padding:10px;
+	width:580px;
+	}
+   #fieldc{
+	padding:0 20px 20px 20px;
+	margin-bottom:10px;
+	border:1px solid #DF3F3F;
+	}
+#fieldh {
+	border: 1px solid rgb(194, 146, 32);
+}
+   legend {
+	color:rgb(160, 54, 54);
+	font-weight:bold;
+	font-size: 14px;
+	}
+   label {
+	margin-top:10px;
+	display:block;
+	font-size: 14px;
+	}
+   label.inline {
+	display:inline;
+	margin-right:50px;
+	}
+   input, textarea, select, option {
+	background-color:#FFF3F3;
+	}
+   input, textarea, select {
+	padding:3px;
+	border:1px solid #F5C5C5;
+	border-radius:5px;
+	width:250px;
+	box-shadow:1px 1px 2px #C0C0C0 inset;
+	}
+   select {
+	margin-top:10px;
+	}
+   input[type=radio] {
+	background-color:transparent;
+	border:none;
+	width:10px;
+	}
+   input[type=submit], input[type=reset] {
+	width:100px;
+	margin-left:5px;
+	box-shadow:1px 1px 1px #D83F3D;
+	cursor:pointer;
+	}
+	.newslet {
+		padding: 5px;
+	}
+	/*modif du class fa */
+	.fa {
+		border: 0px solid gray;	
+		outline: none;
+	}
+	/*flex pour footer */
+	footer  address {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	  
+	  
+	}
+	/*styl de div pub */
+	.publicite {
+		float: left;
+	}
+	.avantage {
+		float: left;
+		width: 241px;
+		background: url("images/avantages.jpg") no-repeat;
+		background-position: initial;
+		background-size: 300px;
+		background-attachment: initial;
+		background-origin: initial;
+		background-clip: initial;
+		height: 280px;
+		margin-right: 9px;
+		cursor: pointer;
+		border: 1px solid #eeeeee;
+	}
+	.blog {
+		float: left;
+		width: 241px;
+		background: url("images/leblog.jpg") no-repeat;
+		background-position: initial;
+		background-size: 300px;
+		background-attachment: initial;
+		background-origin: initial;
+		background-clip: initial;
+		height: 280px;
+		margin-right: 9px;
+		cursor: pointer;
+		border: 1px solid #eeeeee;
+	
+	}
+	.parrainages {
+		float: left;
+		width: 241px;
+		background: url("images/parainage.jpg") no-repeat;
+		background-position: initial;
+		background-size: 300px;
+		background-attachment: initial;
+		background-origin: initial;
+		background-clip: initial;
+		height: 280px;
+		margin-right: 9px;
+		cursor: pointer;
+		border: 1px solid #eeeeee;
+	
+	}
+	.title {
+		color: #F39;
+		float: left;
+		font-size: 15px;
+		margin-top: 189px;
+		text-align: center;
+		width: 100%;
+		padding-bottom: 1px;
+	}
+	.title2 {
+			color: #F39;
+			float: left;
+			font-size: 15px;
+			margin-top: 120px;
+			text-align: center;
+			width: 100%;
+			padding-bottom: 1px;
+		}
+	.title3 {
+            color: #F39;
+			float: left;
+			font-size: 15px;
+			margin-top: 150px;
+			text-align: center;
+			width: 100%;
+			padding-bottom: 1px;
+		}
+	.para1 {
+		color: gainsboro;
+	}
+	/*slidshow */
+	.contener_slideshow
+	{
+	  width:610px;
+	  height:311px;
+	  overflow: hidden;
+	  position: relative;
+	  background-image: url("images/cooking.png");
+	}
+	.slid_1, .slid_2, .slid_3
+	{
+	  position: absolute;
+	  width:610px;
+	  height:211px;
+	}
+	.slid_1{left:2 0;}
+	.slid_2{left: 610px;}
+	.slid_3{left: 1220px;}
+	.contener_slide
+	{
+	  width: 1220px;
+	  height: 211px;
+	  left:0px;
+	  position: absolute;
+	  -webkit-animation-duration: 10s;
+	  -webkit-animation-iteration-count:infinite;
+	  -webkit-animation-name: anim_slide;
+	  -moz-animation-duration: 10s;
+	  -moz-animation-iteration-count:infinite;
+	  -moz-animation-name: anim_slide;
+	  -ms-animation-duration: 10s;
+	  -ms-animation-iteration-count:infinite;
+	  -ms-animation-name: anim_slide;
+	  animation-duration: 10s;
+	  animation-iteration-count:infinite;
+	  animation-name: anim_slide;
+	}
+	@-webkit-keyframes anim_slide 
+	{
+	  0% {left:0px;}
+	  22% {left:0px;}
+	  33% {left:-610px;}
+	  45% {left:-610px;}
+	  66% {left:-1220px;}
+	  90% {left:-1220px;}
+	}
+	@-moz-keyframes anim_slide 
+	{
+	  0% {left:0px;}
+	  22% {left:0px;}
+	  33% {left:-610px;}
+	  45% {left:-610px;}
+	  66% {left:-1220px;}
+	  90% {left:-1220px;}
+	}
+	@-ms-keyframes anim_slide 
+	{
+	  0% {left:0px;}
+	  22% {left:0px;}
+	  33% {left:-610px;}
+	  45% {left:-610px;}
+	  66% {left:-1220px;}
+	  90% {left:-1220px;}
+	}
+	@keyframes anim_slide 
+	{
+	  0% {left:0px;}
+	  22% {left:0px;}
+	  33% {left:-610px;}
+	  45% {left:-610px;}
+	  66% {left:-1220px;}
+	  90% {left:-1220px;}
+	}
