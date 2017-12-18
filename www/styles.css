@@ -121,14 +121,19 @@ background: #c9f0f5;
 width:972px;
 margin:0 auto;
 position:relative;
+
 }
 
 header {
-width:972px;
+width:100%;
+/*padding-left: 157px;*/
 height:131px;
 background: url("images/logo.png") 0 0 no-repeat;
 position:relative;
-padding-left: 157px;
+background-color: rgba(0,0,0,0.2);
+margin: 0;
+display: flex;
+justify-content: space-between;
 }
 .myhome {
 	display: block;
@@ -264,6 +269,7 @@ border-bottom:1px dotted #8d8d8d;
 .menugauch {
 	float: left;
 	width: 20%;
+	padding-left: 22px;
 }
 .menugauch dt {
 	border-bottom: 1px solid;
@@ -297,7 +303,7 @@ flex-direction: column;
 footer {
 	clear: both;
 	width: 100%;
-	background: rgb(208, 217, 224);
+	background-color: rgba(0,0,0,0.2);
 	display: flex;
     justify-content: space-between;
 }
@@ -305,12 +311,8 @@ footer {
 .conteneur-galerie-images
 {
 	margin:0 auto;
-	/*border:5px solid #EEE;*/
-	/*width:500px;
-	height:800px;*/
 	overflow:auto; 
 	padding:5px;
-	/*justify-content: flex-start;*/
 }
 .gauche-galerie-images
 {
@@ -356,6 +358,38 @@ footer {
 	background:#D5F4FF;
 	
 }
+.affichtxt {
+	margin-top: -200px;
+    margin-left: 100px;
+    position: absolute;
+    opacity: 0;
+    background-color: #5a534873;
+	bottom: -115px;
+	left: -71px;
+	right: 108px;
+	border: 1px ridge #847676d6;
+	width: 572px;
+	height: 300px;
+	font-size: 20px;
+	color: rgb(230, 218, 25);
+	transition: .5s ease;
+	display: flex;
+    align-items: center; 
+	}
+.slid_3:hover p {
+	opacity:1;
+	
+}
+.slid_1:hover p {
+	opacity:1;
+	
+}
+
+.slid_2:hover p {
+	opacity:1;
+	
+}
+
 #titre_bas
 {
 	font:Georgia, "Times New Roman", Times, serif;
@@ -365,20 +399,36 @@ footer {
 	text-justify: auto;
 }
 .stylp {
-	width: 40px;
+	
 	height: 10px;
 	background-color: aliceblue;
+	text-align: center;
 }
 .remise {
-	border-bottom: 1px solid;
-	border-color: gray;
+	
+	border-color: rgb(218, 210, 210);
 	color: rgb(218, 35, 157);
 	font-weight: bold;
+	
 }
-.remise1 {
-	border-top: 1px solid;
-	border-color: gray;
-	}
+.modiftail {
+	width: 80px;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+	white-space: nowrap;
+	color: #ffffff;
+	background: #000000;
+	width: 80px;
+}
+.btn:hover {
+	background-color: rgb(243, 146, 219);
+}
+
 .miniature-galerie-images {
 	display: block;
 }
@@ -403,10 +453,10 @@ footer {
 	border:1px solid #DF3F3F;
 	}
 #fieldh {
-	border: 1px solid rgb(194, 146, 32);
+	border: 1px solid rgb(193, 180, 180);
 }
    legend {
-	color:rgb(160, 54, 54);
+	color:rgb(226, 44, 190);
 	font-weight:bold;
 	font-size: 14px;
 	}
@@ -544,7 +594,7 @@ footer {
 	  height:311px;
 	  overflow: hidden;
 	  position: relative;
-	  background-image: url("images/cooking.png");
+	  /*background-image: url("images/cooking.png");*/
 	}
 	.slid_1, .slid_2, .slid_3
 	{
