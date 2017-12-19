@@ -11,11 +11,11 @@ font-family: Helvetica, Arial, sans-serif;
 font-size:12px;
 color:#201f1f;
 position:relative;
-background: #c9f0f5;
+background: #f2f2f2;
 }
 #menu-demo2, #menu-demo2 ul{
-	padding:0;
-	margin: 15px;
+	/*padding:0;*/
+	margin: 20px;
 	list-style:none;
 	text-align:center;
 		}
@@ -50,50 +50,50 @@ background: #c9f0f5;
 	}
 	/* background des liens menus */
 	#menu-demo2 li:first-child{
-	background-color: #65537A;
-	background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
-	background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
-	}
-	#menu-demo2 li:nth-child(2){
 	background-color: #729EBF;
-	background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+	background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
 	background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 	}
+	#menu-demo2 li:nth-child(2){
+	    background-color: #f3f3f2;
+		background-image: -webkit-linear-gradient(top, #f3f3f2 0%, #333A40 100%);
+		background-image: linear-gradient(to bottom, #f3f3f2 0%, #333A40 100%);
+	}
 	#menu-demo2 li:nth-child(3){
-	background-color: #F6AD1A;
-	background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
-	background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+	background-color: #729EBF;
+	background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+	background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 	}
 	#menu-demo2 li:last-child{
-	background-color: #CFFF6A;
-	background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
-	background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+	    background-color: #f3f3f2;
+		background-image: -webkit-linear-gradient(top, #f3f3f2 0%, #333A40 100%);
+		background-image: linear-gradient(to bottom, #f3f3f2 0%, #333A40 100%);
 	}
 	/* background des liens sous menus */
 	#menu-demo2 li:first-child li{
-	background:#2A2333;
+	background:#333A40;
 	}
 	#menu-demo2 li:nth-child(2) li{
 	background:#333A40;
 	}
 	#menu-demo2 li:nth-child(3) li{
-	background:#9F391A;
+	background:#333A40;
 	}
 	#menu-demo2 li:last-child li{
-	background:#677F35;
+	background:#333A40;
 	}
 	/* background des liens menus et sous menus au survol */
 	#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
-	background:#65537A;
+	background:#729EBF;
 	}
 	#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
 	background:#729EBF;
 	}
 	#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
-	background:#F6AD1A;
+	background:#729EBF;
 	}
 	#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
-	background:#CFFF6A;
+	background:#729EBF;
 	}
 	/* les a href */
 	#menu-demo2 a{
@@ -130,7 +130,7 @@ width:100%;
 height:131px;
 background: url("images/logo.png") 0 0 no-repeat;
 position:relative;
-background-color: rgba(0,0,0,0.2);
+/*background-color: rgba(0,0,0,0.2);*/
 margin: 0;
 display: flex;
 justify-content: space-between;
@@ -286,7 +286,7 @@ width: 70%;
 /*display: flex;
 flex-direction: row;*/
 padding: 40px;
-margin: 35px 4px;
+/*margin: 35px 4px;*/
 display: flex;
 flex-direction: column;
 
@@ -363,18 +363,19 @@ footer {
     margin-left: 100px;
     position: absolute;
     opacity: 0;
-    background-color: #5a534873;
-	bottom: -115px;
-	left: -71px;
-	right: 108px;
-	border: 1px ridge #847676d6;
-	width: 572px;
-	height: 300px;
-	font-size: 20px;
-	color: rgb(230, 218, 25);
-	transition: .5s ease;
-	display: flex;
-    align-items: center; 
+    background-color: #f1eadfbf;
+    bottom: -124px;
+    left: -71px;
+    right: 108px;
+    border: 1px ridge #847676d6;
+    width: 572px;
+    height: 300px;
+    font-size: 30px;
+    color: rgb(239, 5, 5);
+    transition: .5s ease;
+    display: flex;
+	align-items: center;
+	text-align: justify;
 	}
 .slid_3:hover p {
 	opacity:1;
@@ -401,8 +402,9 @@ footer {
 .stylp {
 	
 	height: 10px;
-	background-color: aliceblue;
-	text-align: center;
+	background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 5%;
 }
 .remise {
 	
@@ -450,7 +452,7 @@ footer {
    #fieldc{
 	padding:0 20px 20px 20px;
 	margin-bottom:10px;
-	border:1px solid #DF3F3F;
+	border:1px solid rgb(193, 180, 180);
 	}
 #fieldh {
 	border: 1px solid rgb(193, 180, 180);
